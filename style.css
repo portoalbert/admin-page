@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100vw;
+    height: 100vh;
+}
+.header {
+    background-color: antiquewhite;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#searchicon {
+    height: 100%;
+    object-fit: cover;
+}
+.search button {
+    height: 30px;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+}
+.search button:active {
+    background-color: rgba(216, 195, 195, 0.839);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#profiledisplay {
+    height: 50px;
+}
+.headericon {
+    height: 30px;
+}
+.usercard {
+   display: flex;
+   gap: 10px;
+}
+.headerleft {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.search {
+    display: flex;
+    gap: 10px;
+    max-height: 20px;
+}
+.search input {
+    height: 20px;
+}
+.headerright {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    margin-right: 40px;
+}
+.headerbotright {
+    display: flex;
+    justify-content: space-between;
+}
+.headertopright {
+    display: flex;
+    margin-left: 20px;
+    gap: 10px;
+}
+.headerlinks {
+    border-radius: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    background-color:rgb(42, 138, 227);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* SIDE BAR CSS */
+.sidebar {
+    background-color: rgb(42, 138, 227);
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/6;
+    padding: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+#logoicon {
+    height: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    justify-content: space-around;
+}
+.logo div {
+    display: flex;
+    align-items: center;
+}
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+}
+.sidelinks ul {
+    padding: 0;
+    margin-top: 60px;
+}
+.sidebar li {
+    margin: 20px;
+}
+/* CONTENT CSS */
+.content {
+    background-color: #666;
+    grid-column: 2/3;
+    grid-row: 2/6;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+    padding-top: 30px;
+    gap: 10px;
+}
+.maincontent {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.contenttitle {
+    grid-column: 1/3;
+    font-size: .7em;
+}
+.annoucementtitle {
+    grid-column: 2/3;
+    font-size: .7em;
+}
+.cards {
+    background-color: white;
+}
+.announcements, .trending {
+    background-color: white;
+    padding: 10px;
+    font-size: 12px;
+}

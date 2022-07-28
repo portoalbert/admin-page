@@ -5,11 +5,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 100vh;
 }
 .header {
-    background-color: antiquewhite;
+    background-color: white;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -29,7 +30,7 @@ body {
     transform: translateY(4px);
 }
 #profiledisplay {
-    height: 50px;
+    height: 70px;
 }
 .headericon {
     height: 30px;
@@ -37,6 +38,8 @@ body {
 .usercard {
    display: flex;
    gap: 10px;
+   font-weight: 600;
+   font-size: 18px;
 }
 .headerleft {
     display: grid;
@@ -51,6 +54,9 @@ body {
 }
 .search input {
     height: 20px;
+    background-color: rgba(225,232,240,255);
+    border-radius: 16px;
+    width: 400px;
 }
 .headerright {
     display: grid;
@@ -60,12 +66,16 @@ body {
 }
 .headerbotright {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
 }
 .headertopright {
     display: flex;
-    margin-left: 20px;
-    gap: 10px;
+    margin-left: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
 }
 .headerlinks {
     border-radius: 16px;
@@ -73,20 +83,24 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     color: white;
-    background-color:rgb(42, 138, 227);
+    background-color:rgba(24,146,211,255);
     font-weight: 700;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    height: 45px;
 }
 /* SIDE BAR CSS */
 .sidebar {
-    background-color: rgb(42, 138, 227);
+    background-color: rgba(24,146,211,255);
     color: white;
     grid-column: 1/2;
-    grid-row: 1/6;
+    grid-row: 1/3;
     padding: 0px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 20px;
 }
 #logoicon {
     height: 40px;
@@ -95,7 +109,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10%;
-    justify-content: space-around;
+    justify-content: left;
 }
 .logo div {
     display: flex;
@@ -114,35 +128,47 @@ body {
 }
 /* CONTENT CSS */
 .content {
-    background-color: #666;
+    background-color: rgba(225,232,240,255);
     grid-column: 2/3;
-    grid-row: 2/6;
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 10px;
+    grid-template-rows: 1fr 8fr 1fr 8fr;
+    padding: 20px;
     padding-top: 30px;
-    gap: 10px;
+    gap: 24px;
+}
+.contenttitle {
+    grid-column: 1/2;
+}
+.righttittletop, .righttittlebot, .announcements, .trending {
+    grid-column: 2/3;
 }
 .maincontent {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 2/5;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 24px;
 }
-.contenttitle {
-    grid-column: 1/3;
-    font-size: .7em;
+.righttittletop {
+    grid-row: 1/2;
 }
-.annoucementtitle {
-    grid-column: 2/3;
-    font-size: .7em;
+.content h1 {
+    font-size: 20px;
+}
+.cards, .announcements, .trending {
+    background-color: white;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.righttittlebot, .righttittletop, .contenttitle {
+    max-height: 20px;
 }
 .cards {
-    background-color: white;
-}
-.announcements, .trending {
-    background-color: white;
-    padding: 10px;
-    font-size: 12px;
+    max-width: 400px;
+    border-left: 10px solid #e2b232;
 }
